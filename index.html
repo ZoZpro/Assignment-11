@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap 5.3/css/all.min.css">
+    <link rel="stylesheet" href="bootstrap 5.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap 5.3/css/style.css">
+    <title>Weather</title>
+</head>
+
+<body class="bg-dark">
+
+    <nav class="navbar navbar-expand-lg   ">
+        <div class="container ">
+            <a class="navbar-brand" href="#"><i class="fa-solid fa-cloud" style="color: #0f4bff;"></i>Weather </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2   ">
+                    <li class="nav-item  me-2 rounded-pill">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item  me-2 rounded-pill">
+                        <a class="nav-link" href="#">News</a>
+                    </li>
+                    <li class="nav-item  me-2 rounded-pill">
+                        <a class="nav-link" href="#">Live cameras</a>
+                    </li>
+                    <li class="nav-item  me-2 rounded-pill">
+                        <a class="nav-link" href="#">Photos</a>
+                    </li>
+                    <li class="nav-item  me-2 rounded-pill">
+
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <header class="header-bg overflow-auto">
+        <section class="text-center ">
+            <div class="container position-relative">
+                <div class=" input-group mx-auto mt-4 ">
+                    <input type="text" class="form-control search rounded-pill  p-3" placeholder="Find Your Location..">
+                </div>
+            </div>
+        </section>
+
+        
+    </header>
+
+    <section class="position-relative translate-middle-y ">
+        <div class="container ">
+            <div class="row gx-0 ">
+                <!-- Today's Data -->
+                <div class="col-md-4 ">
+                    <div class="today-date py-1 d-flex justify-content-between px-2 rounded-2">
+                        <h5 class="today-date-name">Wednesday</h5>
+                        <span class="today-date-num ms-auto">8 </span> <span class="today-date-month">Septemper</span>
+                    </div>
+                    <div class="today-date-body py-5 px-2 rounded-2">
+                        <h5 class="today-location mb-1">Cairo</h5>
+                        <div class="text-white d-flex justify-content-between align-items-center mb-5">
+                            <h1 class="fw-bolder fa-5x today-temp ">38°C</h1><img src="bootstrap 5.3/113.webp" class="today-condition-img" >
+                        </div>
+                        <h6 class=" today-condition-text text-info mb-4">Clear</h6>
+                        <div class="weather-info d-flex justify-content-start align-items-center  mt-4 ">
+                            <i class=" fa-solid fa-umbrella me-2"></i><span class="humidity"> 20% </span>
+                            <i class=" fa-solid fa-wind mx-2"></i> <span class="wind">18km/h </span>
+                            <i class=" fa-solid fa-gauge fa-rotate-90 mx-2" style="color: #5b5c5d;"></i><span class="wind-direction">East</span>  
+                        </div>
+                    </div>
+                    </div>
+                <!-- Tomorrow's Data -->
+                    <div class="col-md-4 ">
+                    <div class="Tomorrow-date  text-center py-1 rounded-2">
+                        <h5 class="tomorrow-name">Thursday</h5>
+                    </div>
+                    <div class="Tomorrow-date-body text-center py-5 px-2 rounded-2">
+                        <img src="bootstrap 5.3/113.webp" class="tomorrow-condition-img mb-5 ">
+                        <h4 class="text-white tomorrow-max-temp"> 30°C</h4>
+                        <h5 class="tomorrow-min-temp">25.8°C</h5>
+                        <h6 class="tomorrow-condition-text text-info mt-5">Sunny</h6>
+                    </div>
+                    </div>
+                <!-- After Tomorrow's Data -->
+                    <div class="col-md-4 ">
+                    <div class=" today-date text-center py-1 rounded-2">
+                        <h5 class="tomorrow-name">Friday</h5>
+                    </div>
+                    <div class="today-date-body text-center py-5 px-2 rounded-2">
+                        <img src="bootstrap 5.3/113.webp" class="tomorrow-condition-img mb-5 ">
+                        <h4 class="text-white tomorrow-max-temp">39.5 C</h4>
+                        <h5 class="tomorrow-min-temp">25.8 C</h5>
+                        <h6 class="tomorrow-condition-text text-info mt-5">Sunny</h6>
+                    </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="">
+        <div class="container">
+            <div class="row  text-center ">
+                <div class="col-md-6">
+                    <div class="color ">
+                        <div class="subscribe input-group ">
+                            <input type="text" class="form-control rounded-pill py-3"
+                                placeholder="Enter your email to subscribe..">
+                            <button class=" btn btn-primary rounded-pill px-4 me-2 " type="button">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="color ">
+                        <div class="icons text-info d-flex justify-content-end">
+                            <i class="  fa-brands icon-brdr fa-facebook-f"></i>
+                            <i class="ms-3 icon-brdr fa-brands fa-twitter"></i>
+                            <i class=" ms-3 icon-brdr fa-brands fa-google-plus-g"></i>
+                            <i class=" ms-3 fa-brands icon-brdr fa-pinterest"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="today-date bg-transparent  my-4">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+        </div>
+    </section>
+
+
+
+
+
+    <script src="bootstrap 5.3/js/bootstrap.bundle.min.js"></script>
+    <script src="bootstrap 5.3/js/main.js"></script>
+</body>
+
+</html>
